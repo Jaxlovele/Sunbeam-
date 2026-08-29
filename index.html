@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beach Adventure!</title>
+    <title>Snake!</title>
 </head>
 <body>
-  <p>Welcome to the Beach Adventure! In this game you will be able to explore the beach and go on exciting adventures and face accelerating challenges!</p>
+  <p>Welcome to the Snake Game! In this game you will be able to control the snake and eat food to grow longer and earn points!</p>
 </body>
 </html>
 <header><h1>Lets start!</h1></header>
 <main>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>20x20 Grid</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f3f3f3;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(20, 20px);
+      grid-template-rows: repeat(20, 20px);
+      gap: 2px;
+      background: #999;
+      padding: 2px;
+    }
+
+    .cell {
+      width: 20px;
+      height: 20px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <!-- repeat this 400 times -->
+  </div>
+</body>
+</html>
