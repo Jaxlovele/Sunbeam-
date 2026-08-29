@@ -52,3 +52,40 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>20x20 Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(20, 20px);
+      grid-template-rows: repeat(20, 20px);
+      gap: 2px;
+      background: #999;
+      padding: 2px;
+      width: max-content;
+    }
+
+    .cell {
+      width: 20px;
+      height: 20px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid" id="grid"></div>
+
+  <script>
+    const grid = document.getElementById("grid");
+
+    for (let i = 0; i < 20 * 20; i++) {
+      const cell = document.createElement("div");
+      cell.className = "cell";
+      grid.appendChild(cell);
+    }
+  </script>
+</body>
+</html>
